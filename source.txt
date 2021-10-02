@@ -1,0 +1,1 @@
+Source used to build binaries from this directory could be find at: https://github.com/official-stockfish/Stockfish/tree/sf_14
