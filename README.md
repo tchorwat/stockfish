@@ -5,7 +5,7 @@ Stockfish (https://stockfishchess.org/) is the most popular Open Source Universa
 ## Quick reference
 * Project source repository: (https://github.com/tchorwat/stockfish)
 * In case of any bugs raise a ticket through GitHub (https://github.com/tchorwat/stockfish/issues) issues page, please.
-* Supported architectures: `amd64`, `arm64`
+* Supported architectures: `amd64`, `arm64`, `arm`, `ppc64le`
 
 ## Supported tags and respective Dockerfile links
 * [14](https://github.com/tchorwat/stockfish/blob/master/Dockerfile.14), [latest](https://github.com/tchorwat/stockfish/blob/master/Dockerfile.14)

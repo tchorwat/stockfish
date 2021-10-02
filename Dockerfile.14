@@ -8,12 +8,19 @@ RUN apk add --no-cache git g++ make
 RUN git clone --depth 1 --branch sf_14 https://github.com/official-stockfish/Stockfish.git
 
 WORKDIR /Stockfish/src
-RUN case $( uname -m ) in \
+RUN echo "arch:$( uname -m )" \
+&& case $( uname -m ) in \
   x86_64) \
     make build ARCH=x86-64-modern \
   ;; \
   aarch64) \
     make build ARCH=armv8 \
+  ;; \
+  armv7l) \
+    make build ARCH=armv7 \
+  ;; \
+  ppc64le) \
+    make build ARCH=ppc-64 \
   ;; \
   *) \
     exit 1 \
