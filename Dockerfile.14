@@ -5,7 +5,7 @@ LABEL project="https://github.com/tchorwat/stockfish"
 # Install dependencies
 RUN apk add --no-cache git g++ make
 
-RUN git clone --depth 1 --branch sf_14 https://github.com/official-stockfish/Stockfish.git
+RUN git clone --depth 1 --branch sf_16 https://github.com/official-stockfish/Stockfish.git
 
 WORKDIR /Stockfish/src
 RUN echo "arch:$( uname -m )" \
