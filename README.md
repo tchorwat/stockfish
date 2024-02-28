@@ -8,7 +8,7 @@ Stockfish (https://stockfishchess.org/) is the most popular Open Source Universa
 * Supported architectures: `amd64`, `arm64`, `arm`, `ppc64le`
 
 ## Supported tags and respective Dockerfile links
-* [14](https://github.com/tchorwat/stockfish/blob/master/Dockerfile.14), [latest](https://github.com/tchorwat/stockfish/blob/master/Dockerfile.14)
+* [16](https://github.com/tchorwat/stockfish/blob/master/dockerfile), [latest](https://github.com/tchorwat/stockfish/blob/master/dockerfile)
 
 ## Usage
 
@@ -17,6 +17,10 @@ Stockfish (https://stockfishchess.org/) is the most popular Open Source Universa
 To run Stockfish UCI Engine and expose it, run:
 ```
 docker run -d -p 23249:23249 tchorwat/stockfish
+```
+or better yet
+```
+docker-compose up -d
 ```
 
 Now you can test it with:
